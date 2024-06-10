@@ -1,10 +1,12 @@
 /* styles.css */
 
-body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
-}
+html, body {
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+  }
+  
 
 header {
   color: #fff;
@@ -130,9 +132,9 @@ header {
 }
 
 .mac-img {
-  width: 580px;
-  height: 580px;
-  margin-left: 120%;
+  width: 550px;
+  height: 550px;
+  margin-left: 60%;
   object-fit: contain;
 }
 
@@ -147,6 +149,9 @@ header {
     font-size: 50px;
     line-height: 45px;
     text-align: left;
+  }
+  .break{
+    display: none;
   }
 }
 @media only screen and (min-width: 600px) {
@@ -232,6 +237,9 @@ header {
   }
   .about-us-heading {
     font-size: 30px;
+  }
+  .goal-div{
+    align-items: center;
   }
 }
 
@@ -405,12 +413,21 @@ blockquote cite:before {
 }
 
 @media only screen and (max-width: 600px) {
-  .services img {
-    display: none;
-  }
   .card {
     height: max-content;
+    width: 100%;
   }
+  .services-row{
+    display: flex;
+    flex-direction:column ;
+    text-align: left;
+    align-items: flex-start;
+  }
+  .service-left-col, .service-right-col{
+    width: 100%;
+  }
+  .service-left-col img, .service-right-col img{
+display: none;  }
 }
 
 /* CONTACT */
@@ -449,6 +466,14 @@ blockquote cite:before {
   border-radius: 8px;
   font-family: "Montserrat", sans-serif;
 }
+
+@media only screen and (max-width: 600px) {
+    .contact-form-container{
+        padding: 5%;
+        margin-right: 3%;
+
+    }
+  }
 
 input[type="text"],
 select,
@@ -533,6 +558,7 @@ input[type="submit"] {
 
 .footer{
     height: 120px;
+    width: 100%;
     background-color: #444;
     padding-top: 20px;
     text-align: center;
