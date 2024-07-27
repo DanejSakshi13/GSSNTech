@@ -1,12 +1,12 @@
 /* styles.css */
 
-html, body {
-    overflow-x: hidden;
-    margin: 0;
-    padding: 0;
-    width: 100%;
-  }
-  
+html,
+body {
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
 
 header {
   color: #fff;
@@ -128,7 +128,7 @@ header {
   z-index: 2;
   width: 600px;
   height: 0px;
-  top:10%; /* Adjust this value as needed */
+  top: 10%; /* Adjust this value as needed */
 }
 
 .mac-img {
@@ -150,7 +150,7 @@ header {
     line-height: 45px;
     text-align: left;
   }
-  .break{
+  .break {
     display: none;
   }
 }
@@ -167,7 +167,7 @@ header {
   height: 100%;
   background-color: #ffffff;
   padding: 50px 20px;
-  margin-top: 5%;
+  margin-top: 2%;
 }
 
 .about-us-heading {
@@ -203,10 +203,9 @@ header {
   width: 55%;
 }
 
-.right-col{
-    width: 45%;
+.right-col {
+  width: 45%;
 }
-
 
 .left-col {
   text-align: left;
@@ -238,59 +237,53 @@ header {
   .about-us-heading {
     font-size: 30px;
   }
-  .goal-div{
+  .goal-div {
     align-items: center;
   }
 }
 
-
-.goal-div{
-    width: 78%;
-    padding : 10px 40px;
-    margin-left: 8%;
-    margin-top: 50px;
-    font-family: "Montserrat", sans-serif;
-    background-color: #6e99ff;
-    line-height: 35px;
-    color: white;
+.goal-div {
+  width: 78%;
+  padding: 10px 40px;
+  margin-left: 8%;
+  margin-top: 50px;
+  font-family: "Montserrat", sans-serif;
+  background-color: #6e99ff;
+  line-height: 35px;
+  color: white;
 }
 
 /* #a8d1fd; */
 
 blockquote {
-    position: relative;
-    margin: 0.5em;
-    padding: 0.5em 2em 0.5em 3em;
+  position: relative;
+  margin: 0.5em;
+  padding: 0.5em 2em 0.5em 3em;
 }
 blockquote:before {
-    position: absolute;
-    font-size: 6em;
-    line-height: 1;
-    top: 0;
-    left: 0;
-    content: "\201C";
+  position: absolute;
+  font-size: 6em;
+  line-height: 1;
+  top: 0;
+  left: 0;
+  content: "\201C";
 }
 blockquote:after {
-    position: absolute;
-    float:right;
-    font-size:6em;
-    line-height: 1;
-    right:0;
-    bottom:-0.5em;
-    content: "\201D";
+  position: absolute;
+  float: right;
+  font-size: 6em;
+  line-height: 1;
+  right: 0;
+  bottom: -0.5em;
+  content: "\201D";
 }
 blockquote footer {
-    padding: 0 2em 0 0;
-    text-align:right;
+  padding: 0 2em 0 0;
+  text-align: right;
 }
 blockquote cite:before {
-    content: "\2013";
+  content: "\2013";
 }
-
-
-
-
-
 
 /* WELCOME */
 
@@ -312,8 +305,6 @@ blockquote cite:before {
   gap: 50px;
   margin-top: 20px;
 }
-
-
 
 .card {
   background-color: #ffffff;
@@ -417,17 +408,20 @@ blockquote cite:before {
     height: max-content;
     width: 100%;
   }
-  .services-row{
+  .services-row {
     display: flex;
-    flex-direction:column ;
+    flex-direction: column;
     text-align: left;
     align-items: flex-start;
   }
-  .service-left-col, .service-right-col{
+  .service-left-col,
+  .service-right-col {
     width: 100%;
   }
-  .service-left-col img, .service-right-col img{
-display: none;  }
+  .service-left-col img,
+  .service-right-col img {
+    display: none;
+  }
 }
 
 /* CONTACT */
@@ -468,12 +462,11 @@ display: none;  }
 }
 
 @media only screen and (max-width: 600px) {
-    .contact-form-container{
-        padding: 5%;
-        margin-right: 3%;
-
-    }
+  .contact-form-container {
+    padding: 5%;
+    margin-right: 3%;
   }
+}
 
 input[type="text"],
 select,
@@ -511,10 +504,10 @@ input[type="submit"] {
   width: 300px;
   height: max-content;
   margin-top: 5px;
-  margin-bottom: 25px;
+  margin-bottom: 20px;
   background-color: #ffffff;
   border-radius: 5px;
-  padding: 10px;
+  padding: 9px;
   display: flex;
   flex-direction: row;
   font-family: "Montserrat", sans-serif;
@@ -554,24 +547,42 @@ input[type="submit"] {
   }
 }
 
+.socials {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+
+.social-bg {
+  height: 40px;
+  width: 40px;
+  border-radius: 5px;
+  background-color: #444;
+}
+
+.social-icon {
+  color: white;
+  height: 50px;
+  width: 50px;
+  padding: 11px;
+}
 /* FOOTER */
 
-.footer{
-    height: 120px;
-    width: 100%;
-    background-color: #444;
-    padding-top: 20px;
-    text-align: center;
-    color: white;
-    font-family: "Montserrat", sans-serif;
-
+.footer {
+  height: 120px;
+  width: 100%;
+  background-color: #444;
+  padding-top: 20px;
+  text-align: center;
+  color: white;
+  font-family: "Montserrat", sans-serif;
 }
 
-.company-name{
-    margin: 0;
+.company-name {
+  margin: 0;
 }
 
-.copyright{
-    margin: 0;
-    padding-top: 10px;
+.copyright {
+  margin: 0;
+  padding-top: 10px;
 }
